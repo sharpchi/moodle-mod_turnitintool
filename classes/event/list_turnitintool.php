@@ -3,7 +3,7 @@ namespace mod_turnitintool\event;
 defined('MOODLE_INTERNAL') || die();
 class list_turnitintool extends \core\event\base {
     protected function init() {
-        $this->data['crud'] = 'v'; // c(reate), r(ead), u(pdate), d(elete)
+        $this->data['crud'] = 'r'; // c(reate), r(ead), u(pdate), d(elete)
         $this->data['level'] = self::LEVEL_PARTICIPATING; // For 2.6, this appears to have been renamed to 'edulevel' in 2.7
         $this->data['edulevel'] = self::LEVEL_PARTICIPATING;
         $this->data['objecttable'] = 'turnitintool';
